@@ -1,4 +1,4 @@
-package in.co.rays.oop.polymorphism;
+package in.co.rays.oop.abstraction;
 
 public class Circle extends Shape {
 	
@@ -14,7 +14,9 @@ public class Circle extends Shape {
 	
 	@Override
 	public double area() {
-		return  Math.PI * radius * radius;
+		
+		return Math.PI * radius * radius;
 	}
+	
 
 }

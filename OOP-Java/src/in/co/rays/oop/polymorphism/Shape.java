@@ -2,8 +2,8 @@ package in.co.rays.oop.polymorphism;
 
 public class Shape {
 	
-	public void area() {
-		System.out.println("area of from shape class");
+	public double area() {
+		return 0.0;
 	}
 	
 	public static Shape getShape(int i) {
