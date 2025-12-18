@@ -1,0 +1,29 @@
+package in.co.rays.oop.overriding;
+
+public class Shape {
+
+	protected String color;
+	protected int borderWidth;
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public int getBorderWidth() {
+		return borderWidth;
+	}
+
+	public void setBorderWidth(int borderWidth) {
+		this.borderWidth = borderWidth;
+	}
+
+	public void area() {
+		System.out.println("Area of shape classes");
+	}
+
+}
+
