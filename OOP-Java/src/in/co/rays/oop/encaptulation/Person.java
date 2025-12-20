@@ -36,6 +36,7 @@ public class Person {
 	public int getAge(Date DOB) {
 		Date now = new Date();
 		
+		@SuppressWarnings("deprecation")
 		int Age = DOB.getYear()- now.getYear();
 		
 		return Age;

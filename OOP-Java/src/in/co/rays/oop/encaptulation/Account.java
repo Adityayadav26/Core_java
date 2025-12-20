@@ -50,15 +50,19 @@ public class Account {
 			System.out.println("Insufficent balance to Transfer:" + fundTransfer);
 		}else {
 			this.balance = this.balance- fundTransfer;
-			this.balance = target.balance + fundTransfer;
+			target.balance = target.balance + fundTransfer;
 			System.out.println("After Fund Transfer Remaining Amount is:" + this.balance);
 		}
 	}
 	
 	public void payBill(double payBill) {
-		if(this.balance < payBill) {
-			System.out.println("Total balance after Pay Bill:" + this.balance);
+		if(this.balance >= payBill) {
+			this.balance = this.balance - payBill;
+			System.out.println("Balance after bill payment:" + this.balance);
+		}else{
+			System.out.println("Insufficient balance to pay bill");
 		}
+			
 	}
 
 }
