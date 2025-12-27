@@ -1,0 +1,24 @@
+package com.rays.collection.list;
+
+import java.util.List;
+import java.util.Vector;
+
+public class TestVector {
+	public static void main(String[] args) {
+
+		List v = new Vector();
+
+		v.add(0, "Ram");
+		v.add(1, "Ram");
+		v.add(2, "Rawan");
+		v.add(3, 5);
+		v.add(4, null);
+		v.add(5, null);
+		v.add(6, 'a');
+		v.add(7, true);
+
+		System.out.println(v);
+		System.out.println(v.get(4));
+	}
+
+}
