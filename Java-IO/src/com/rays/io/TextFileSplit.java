@@ -13,7 +13,7 @@ public class TextFileSplit {
 		File file = new File("D:\\IO\\FileSplit.txt");
 		BufferedReader filetocount = new BufferedReader(new FileReader(file));
 		
-		int count = 0;
+		int count = 5;
 		String s = filetocount.readLine();
 		
 		while (s !=null) {
